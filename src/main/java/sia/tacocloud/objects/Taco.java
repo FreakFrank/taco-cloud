@@ -5,10 +5,14 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 
 @Data
 public class Taco {
+
+    private long id;
+    private Date createdAt;
 
     @NotBlank
     @Size(min = 5, message = "Name must be at least 5 characters long")
