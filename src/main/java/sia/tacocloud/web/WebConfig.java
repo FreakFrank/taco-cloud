@@ -11,5 +11,6 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName(View.HOME.getValue());
+        registry.addViewController("/login").setViewName(View.LOGIN.getValue());
     }
 }

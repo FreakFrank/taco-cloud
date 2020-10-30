@@ -78,7 +78,8 @@ public class DesignTacoController {
     }
 
     private void fillIngredients() {
-        ingredientRepository.findAll().forEach(ingredient -> ingredients.add(ingredient));
+        if (ingredients.isEmpty())
+            ingredientRepository.findAll().forEach(ingredient -> ingredients.add(ingredient));
     }
 
 }
