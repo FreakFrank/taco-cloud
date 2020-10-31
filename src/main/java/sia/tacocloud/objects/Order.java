@@ -18,7 +18,7 @@ public class Order {
 
     private static final long serialVersionUID = 1;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @NotBlank(message = "Name cannot be empty")
     private String name;
